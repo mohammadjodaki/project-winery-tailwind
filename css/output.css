@@ -578,6 +578,14 @@ video {
   left: 0px;
 }
 
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .m-2 {
   margin: 0.5rem;
 }
@@ -586,13 +594,26 @@ video {
   margin: auto;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
 
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .mt-20 {
@@ -601,6 +622,10 @@ video {
 
 .mt-28 {
   margin-top: 7rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .mt-8 {
@@ -655,6 +680,10 @@ video {
   height: 330px;
 }
 
+.h-\[600px\] {
+  height: 600px;
+}
+
 .h-\[800px\] {
   height: 800px;
 }
@@ -663,23 +692,8 @@ video {
   height: 100vh;
 }
 
-.h-min {
-  height: -moz-min-content;
-  height: min-content;
-}
-
-.h-max {
-  height: -moz-max-content;
-  height: max-content;
-}
-
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.h-\[600px\] {
-  height: 600px;
+.w-2\/4 {
+  width: 50%;
 }
 
 .w-20 {
@@ -690,12 +704,28 @@ video {
   width: 75%;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
 .w-full {
   width: 100%;
 }
 
-.w-2\/4 {
+.w-1\/2 {
   width: 50%;
+}
+
+.w-36 {
+  width: 9rem;
+}
+
+.w-52 {
+  width: 13rem;
 }
 
 .translate-y-1\/2 {
@@ -711,6 +741,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .items-center {
   align-items: center;
 }
@@ -723,8 +757,20 @@ video {
   justify-content: space-between;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .rounded-t-md {
@@ -744,6 +790,11 @@ video {
 .bg-\[\#1F0A13\] {
   --tw-bg-opacity: 1;
   background-color: rgb(31 10 19 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#3a0a1f\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(58 10 31 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#45152A\] {
@@ -769,6 +820,10 @@ video {
   background-image: url('img/calltoaction-background.jpg');
 }
 
+.bg-\[url\(\'img\/footer-background-scaled\.jpg\'\)\] {
+  background-image: url('img/footer-background-scaled.jpg');
+}
+
 .bg-\[url\(\'img\/header1\.jpg\'\)\] {
   background-image: url('img/header1.jpg');
 }
@@ -787,6 +842,10 @@ video {
 
 .bg-center {
   background-position: center;
+}
+
+.p-14 {
+  padding: 3.5rem;
 }
 
 .p-4 {
@@ -826,8 +885,16 @@ video {
   padding-top: 3rem;
 }
 
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
 .pt-20 {
   padding-top: 5rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -864,26 +931,35 @@ video {
   line-height: 1.75rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .leading-10 {
   line-height: 2.5rem;
 }
 
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.leading-9 {
+  line-height: 2.25rem;
+}
+
 .leading-\[50px\] {
   line-height: 50px;
 }
 
-.leading-6 {
-  line-height: 1.5rem;
+.text-\[\#212934\] {
+  --tw-text-opacity: 1;
+  color: rgb(33 41 52 / var(--tw-text-opacity));
 }
 
 .text-\[\#2b0d1a\] {
@@ -936,15 +1012,6 @@ video {
     margin: 1.25rem;
   }
 
-  .md\:m-0 {
-    margin: 0px;
-  }
-
-  .md\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
   .md\:ml-0 {
     margin-left: 0px;
   }
@@ -973,48 +1040,40 @@ video {
     width: 25%;
   }
 
+  .md\:w-2\/3 {
+    width: 66.666667%;
+  }
+
   .md\:w-2\/4 {
     width: 50%;
   }
 
-  .md\:w-full {
-    width: 100%;
-  }
-
-  .md\:w-1 {
-    width: 0.25rem;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
-  .md\:w-3\/4 {
-    width: 75%;
-  }
-
-  .md\:w-2\/5 {
-    width: 40%;
-  }
-
-  .md\:w-2 {
-    width: 0.5rem;
+  .md\:w-5\/6 {
+    width: 83.333333%;
   }
 
   .md\:w-52 {
     width: 13rem;
   }
 
-  .md\:w-\[45\] {
-    width: 45;
-  }
-
   .md\:w-\[45\%\] {
     width: 45%;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:w-56 {
+    width: 14rem;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:justify-center {
